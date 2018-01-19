@@ -76,16 +76,41 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Application\ApplicationIndex.aspx" />
+    <Content Include="Firmware\FirmwareIndex.aspx" />
+    <Content Include="Log\LogIndex.aspx" />
     <Content Include="Statistics\StatisticsIndex.aspx" />
+    <Content Include="Terminal\TerminalIndex.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\ApplicationIndex.aspx.cs">
+      <DependentUpon>ApplicationIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ApplicationIndex.aspx.designer.cs">
+      <DependentUpon>ApplicationIndex.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EQMS.Master.cs">
       <DependentUpon>EQMS.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EQMS.Master.designer.cs">
       <DependentUpon>EQMS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Firmware\FirmwareIndex.aspx.cs">
+      <DependentUpon>FirmwareIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Firmware\FirmwareIndex.aspx.designer.cs">
+      <DependentUpon>FirmwareIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\LogIndex.aspx.cs">
+      <DependentUpon>LogIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log\LogIndex.aspx.designer.cs">
+      <DependentUpon>LogIndex.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Statistics\StatisticsIndex.aspx.cs">
@@ -95,13 +120,15 @@
     <Compile Include="Statistics\StatisticsIndex.aspx.designer.cs">
       <DependentUpon>StatisticsIndex.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Terminal\TerminalIndex.aspx.cs">
+      <DependentUpon>TerminalIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terminal\TerminalIndex.aspx.designer.cs">
+      <DependentUpon>TerminalIndex.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Application\" />
-    <Folder Include="Firmware\" />
-    <Folder Include="Log\" />
-    <Folder Include="Terminal\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
