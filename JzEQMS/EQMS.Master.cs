@@ -23,5 +23,19 @@ namespace JzEQMS
         {
             Response.Redirect("../Statistics/StatisticsIndex.aspx");
         }
+        protected void gjgl_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Firmware/FirmwareIndex.aspx");
+        }
+
+        protected void Appliction_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Application/ApplicationIndex.aspx");
+        }
+
+        protected void Log_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Log/LogIndex.aspx");
+        }
     }
 }

@@ -84,20 +84,20 @@
         <div class="d">
          <div class="a"></div>
              <div class="b">
-                 <asp:Button ID="gjgl" runat="server" Text="固件管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" />
+                 <asp:Button ID="gjgl" runat="server" Text="固件管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" OnClick="gjgl_Click" />
              </div>
         </div>
 
         <div class="d">
          <div class="a"></div>
              <div class="b">
-                 <asp:Button ID="Appliction" runat="server" Text="应用管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" />
+                 <asp:Button ID="Appliction" runat="server" Text="应用管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" OnClick="Appliction_Click" />
              </div>
         </div>
               <div class="d">
                 <div class="a"></div>
                 <div class="b">
-                 <asp:Button ID="Log" runat="server" Text="日志管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" />
+                 <asp:Button ID="Log" runat="server" Text="日志管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" OnClick="Log_Click" />
                 </div>
             </div>
         
@@ -105,6 +105,21 @@
     </div>
     <div class="main1">
      <asp:ContentPlaceHolder ID="ce" runat="server">
+
+     </asp:ContentPlaceHolder>
+    </div>
+        <div class="main1">
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+     </asp:ContentPlaceHolder>
+    </div>
+        <div class="main1">
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+     </asp:ContentPlaceHolder>
+    </div>
+        <div class="main1">
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
 
      </asp:ContentPlaceHolder>
     </div>

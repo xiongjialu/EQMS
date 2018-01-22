@@ -5,7 +5,7 @@
  <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>测试用</title>
+	<title>测试用01</title>
     <style>
        body, html{
 			width: 100%;
@@ -23,7 +23,7 @@
 </head>
 <body>
 	<div class="ceshi">
-        <h1>测试用!</h1>
+        <h1>测试用01!</h1>
 	</div>
 </body>
 </html>

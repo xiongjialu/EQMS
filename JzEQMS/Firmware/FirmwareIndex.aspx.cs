@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace JzEQMS.Firmware
 {
-    public partial class FirmwareIndex : System.Web.UI.Page
+    public partial class FiemwareIndex : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

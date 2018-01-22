@@ -66,6 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Application\ApplicationIndex.aspx" />
+    <Content Include="Firmware\FirmwareIndex.aspx">
+      <BrowseToURL>~/Firmware/FirmwareIndex.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Log\LogIndex.aspx" />
     <Content Include="packages.config" />
     <Content Include="EQMS.Master" />
     <None Include="Web.Debug.config">
@@ -76,9 +81,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Application\ApplicationIndex.aspx" />
-    <Content Include="Firmware\FirmwareIndex.aspx" />
-    <Content Include="Log\LogIndex.aspx" />
     <Content Include="Statistics\StatisticsIndex.aspx" />
     <Content Include="Terminal\TerminalIndex.aspx" />
     <Content Include="Web.config" />
