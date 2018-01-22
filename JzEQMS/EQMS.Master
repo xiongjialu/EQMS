@@ -6,16 +6,109 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <div class="main">
+    <asp:ContentPlaceHolder ID="map" runat="server">
     </asp:ContentPlaceHolder>
+    </div>
+    <style type="text/css">
+        .left {
+            width:180px;
+            position:absolute;
+            margin-top:10px;
+            margin-left:7%
+        }
+        .d {
+            height:100px;
+            margin-left:5px;
+            margin-bottom:3%;
+            background-color:#eae2e2;
+        }
+        .main {
+            position:absolute;
+            height:600px;
+            width:1080px;
+            margin-left:300px;
+            margin-top:150px;
+        }
+        .top {
+            width:auto;
+            height:130px;
+            background-color:#eae2e2;
+            margin-bottom:10px;
+        }
+
+        #form1 {
+            height: 100%;
+            border:solid 1px blue;
+            margin:0 auto;
+            width:100%;
+        }
+        .a{
+            width:30%;
+            height:50px;
+            float:left;
+            margin-top:25px;
+        }
+        .b {
+             width:65%;
+             height:50px;
+             float:right;
+             margin-top:25px;
+             line-height:50px;
+        }
+        .main1 {
+            margin-left:300px;
+            width:70%;
+        }
+
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      <div class="top"></div>
+    <div class="left">
+        <div class="d">
+            <div class="a"></div>
+             <div class="b">
+                 <asp:Button ID="statistics" runat="server" Text=" 统 计" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" OnClick="statistics_Click" />
+             </div>
+        </div>
+
+        <div class="d">
+          <div class="a"></div>
+             <div class="b">
+                 <asp:Button ID="zdgl" runat="server" Text="终端管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" OnClick="zdgl_Click" />
+             </div>
+        </div>
+
+        <div class="d">
+         <div class="a"></div>
+             <div class="b">
+                 <asp:Button ID="gjgl" runat="server" Text="固件管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" />
+             </div>
+        </div>
+
+        <div class="d">
+         <div class="a"></div>
+             <div class="b">
+                 <asp:Button ID="Appliction" runat="server" Text="应用管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" />
+             </div>
+        </div>
+              <div class="d">
+                <div class="a"></div>
+                <div class="b">
+                 <asp:Button ID="Log" runat="server" Text="日志管理" BackColor="Transparent" BorderColor="Transparent" EnableTheming="True" Font-Names="楷体" Font-Size="Large" ForeColor="#33CCFF" />
+                </div>
+            </div>
         
-        </asp:ContentPlaceHolder>
+       
+    </div>
+    <div class="main1">
+     <asp:ContentPlaceHolder ID="ce" runat="server">
+
+     </asp:ContentPlaceHolder>
     </div>
     </form>
 </body>
 </html>
+

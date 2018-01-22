@@ -13,5 +13,15 @@ namespace JzEQMS
         {
 
         }
+
+        protected void zdgl_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Terminal/TerminalIndex.aspx");
+        }
+
+        protected void statistics_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Statistics/StatisticsIndex.aspx");
+        }
     }
 }
