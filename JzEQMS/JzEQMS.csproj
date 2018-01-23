@@ -70,6 +70,7 @@
     <Content Include="Firmware\FirmwareIndex.aspx">
       <BrowseToURL>~/Firmware/FirmwareIndex.aspx</BrowseToURL>
     </Content>
+    <Content Include="HtmlPage1.html" />
     <Content Include="Log\LogIndex.aspx" />
     <Content Include="packages.config" />
     <Content Include="EQMS.Master" />
